@@ -8,11 +8,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: my-simple-node-app
+      app: my-app
   template:
     metadata:
       labels:
-        app: my-simple-node-app
+        app: my-app
     spec:
       containers:
       - name: kubernetes-on-aws
