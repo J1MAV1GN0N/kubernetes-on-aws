@@ -19,3 +19,7 @@ spec:
         image: philchrist/kubernetes-on-aws
         ports:
         - containerPort: 80
+      livenessProbe:
+        httpGet:
+          path: /health
+          port: 8080
